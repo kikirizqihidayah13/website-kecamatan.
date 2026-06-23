@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-ink: #2B2620;
+  --color-ink-soft: #6E6457;
+  --color-paper: #F7F1E6;
+  --color-paper-deep: #EFE6D6;
+  --color-surface: #FFFFFF;
+  --color-line: #E6DCC8;
+  --color-line-strong: #D8CBAE;
+
+  --color-green-primary: #2F5233;
+  --color-green-light: #E6EEE3;
+  --color-green-dark: #1F3A22;
+
+  --color-gold: #C9971C;
+  --color-gold-light: #FBF1D6;
+  --color-gold-dark: #8A6612;
+
+  --color-clay: #BD5B3A;
+  --color-clay-light: #FBE9E1;
+  --color-clay-dark: #8C3F26;
+
+  --color-teal-primary: #2E7D7B;
+  --color-teal-light: #E2F0EF;
+  --color-teal-dark: #1F5654;
+
+  --color-plum: #7A4F8C;
+  --color-plum-light: #F1E7F5;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  background-image: radial-gradient(circle at 1px 1px, rgba(43, 38, 32, 0.035) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line-strong);
+  border-radius: 99px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-soft);
+}
+
+/* Motif Lines */
+.motif {
+  height: 6px;
+  width: 100%;
+  background-image: repeating-linear-gradient(135deg, #C9971C 0, #C9971C 7px, transparent 7px, transparent 14px);
+  opacity: 0.55;
+}
+.motif.deep {
+  background-image: repeating-linear-gradient(135deg, #E6EEE3 0, #E6EEE3 7px, transparent 7px, transparent 14px);
+  opacity: 1;
+}
+
+/* Shorthands for visual structure */
+.card-shine {
+  box-shadow: 0 1px 2px rgba(43, 38, 32, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+.card-shine:hover {
+  box-shadow: 0 6px 24px rgba(43, 38, 32, 0.08);
+}

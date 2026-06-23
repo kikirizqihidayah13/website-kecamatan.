@@ -1,0 +1,6 @@
+{
+  "name": "SIMDES Ilir Timur I",
+  "description": "Sistem Informasi Desa Kecamatan Ilir Timur I untuk pemetaan monografi, komoditas unggulan, data perangkat, berita kegiatan, lapak desa, dan monitoring aset desa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
